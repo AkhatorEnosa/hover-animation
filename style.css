@@ -1,0 +1,55 @@
+.div-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.div-cont:hover {
+  justify-content: flex-end;
+  width: 300px;
+  background-color: white;
+}
+
+.top-div {
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-out;
+}
+
+.div-cont:hover .top-div {
+  opacity: 0;
+  transform: scale(1.8);
+}
+
+.bottom-div {
+  transition-delay: 0.3s;
+  transition: all 0.1s ease-in-out;
+}
+
+.div-cont:hover .bottom-div {
+  width: 300px;
+  height: inherit;
+}
+
+.movie-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+
+.m-3:hover .movie-name {
+  width: 300px;
+  text-overflow: ellipsis;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  -webkit-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
