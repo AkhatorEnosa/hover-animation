@@ -4,26 +4,30 @@
   align-items: center;
   overflow: hidden;
   cursor: pointer;
+  transition-delay: 0.5s;
+  transition: all 0.4s ease-in-out;
 }
 
 .div-cont:hover {
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   width: 300px;
   background-color: white;
 }
 
 .top-div {
   opacity: 1;
-  transition: transform 0.3s ease-in-out, opacity 0.2s ease-out;
+  transition-delay: 0.5s;
+  transition: transform 0.5s ease-in-out, opacity 0.3s ease-out;
 }
 
 .div-cont:hover .top-div {
   opacity: 0;
+  /* width: 300px; */
   transform: scale(1.8);
 }
 
 .bottom-div {
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
   transition: all 0.1s ease-in-out;
 }
 
