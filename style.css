@@ -1,11 +1,10 @@
 .div-cont {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   overflow: hidden;
   cursor: pointer;
-  transition-delay: 0.5s;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out 0.2s;
 }
 
 .div-cont:hover {
@@ -16,19 +15,18 @@
 
 .top-div {
   opacity: 1;
-  transition-delay: 0.5s;
-  transition: transform 0.5s ease-in-out, opacity 0.3s ease-out;
+  transition: width 0.3s ease-in-out 0.2s, height 0.3s ease-in-out 0.2s, opacity 0.2s ease-out 0.2s;
 }
 
 .div-cont:hover .top-div {
   opacity: 0;
-  /* width: 300px; */
-  transform: scale(1.8);
+  width: 300px;
+  height: 450px;
+  /* transform: scale(1.8); */
 }
 
 .bottom-div {
-  transition-delay: 0.5s;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out 0.2s;
 }
 
 .div-cont:hover .bottom-div {
@@ -36,11 +34,20 @@
   height: inherit;
 }
 
+.desc {
+  font-size: 12px;
+  transition: 0.3s all ease-in-out 0.2s;
+}
+
+.div-cont:hover .desc {
+  font-size: 16px;
+}
+
 .movie-name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out 0.2s;
 }
 
 .m-3:hover .movie-name {
